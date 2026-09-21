@@ -1,6 +1,23 @@
 Comply Filing Extractor
 A full-stack PDF extraction platform that identifies document headings, separates headings from their corresponding body content, and presents the extracted information in a structured web interface.
 
+
+🔗 Live Demo
+
+Frontend
+https://comply-filing-extractor.vercel.app/
+
+Backend API
+https://comply-filing-extractor-api.onrender.com
+
+API Documentation
+https://comply-filing-extractor-api.onrender.com/docs
+
+GitHub Repository
+https://github.com/rohittt18-git/comply-filing-extractor
+
+
+
 This project was developed as a take-home assignment for Comply.ai.
 📌 Project Overview
 
@@ -376,7 +393,7 @@ Build Command:
 pip install -r requirements.txt
 Start Command:
 uvicorn app.main:app --host 0.0.0.0 --port $PORT
-After deployment, the backend provides:
+After deployment, the backend provides: 
 /
 /api/health
 /docs
@@ -389,12 +406,13 @@ Vercel Configuration
 Root Directory:
 frontend
 Production environment variable:
-VITE_API_URL=<DEPLOYED_BACKEND_URL>
+
+VITE_API_URL = https://comply-filing-extractor-api.onrender.com
 
 For example:
-VITE_API_URL=https://your-backend.onrender.com
+VITE_API_URL= https://comply-filing-extractor-api.onrender.com
 The frontend then sends extraction requests to:
-https://your-backend.onrender.com/api/extract
+https://comply-filing-extractor-api.onrender.com
 The backend CORS configuration must allow requests from the deployed Vercel frontend.
 
 
